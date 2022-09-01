@@ -19,6 +19,3 @@ class Solution:
             prev = number
 
         return total
-            
-            
-        
