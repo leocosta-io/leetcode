@@ -12,16 +12,8 @@ var maxSubArray = function(nums) {
         // console.log("nums[i]", nums[i]);
         // console.log();
         
-        if (sum < 0 && nums[i] > sum) {
-            sum = nums[i];
-        }
-        else {
-            sum += nums[i];
-        }
-        
-        if (sum > largest_sum) {
-            largest_sum = sum;
-        }
+        sum = Math.max(nums[i], sum + nums[i]);
+        largest_sum = Math.max(largest_sum, sum);
 
     }
         
