@@ -12,26 +12,11 @@ var addBinary = function(a, b) {
     let totalItem = 0;
     let total = "";
     
-    console.log("a: ", a);
-    console.log("b: ", b);
-    
-    while ( i_a>=0 || i_b>=0 || plus1>0 ) {
-        console.log();
-        console.log("i_a: ", i_a);
-        console.log("i_b: ", i_b);
-        console.log("plus1: ", plus1);
-        
-        
-        totalItem = 0;
-        
+    while ( i_a>=0 || i_b>=0 || plus1>0 ) {        
         aItem = i_a>=0 ? parseInt(a[i_a]) : 0;
         bItem = i_b>=0 ? parseInt(b[i_b]) : 0;
-        
-        
         totalItem = aItem + bItem + plus1;
-        
-        console.log(totalItem);
-        
+                
         if (totalItem===0) {
             total = "0" + total;
             plus1 = 0;
