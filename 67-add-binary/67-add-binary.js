@@ -29,7 +29,7 @@ var addBinary = function(a, b) {
             total = "0" + total;
             plus1 = 1;
         }
-        else if (totalItem===3) {
+        else {
             total = "1" + total;
             plus1 = 1;
         }
