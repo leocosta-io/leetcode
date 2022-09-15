@@ -8,16 +8,7 @@ var searchInsert = function(nums, target) {
     let higher = nums.length-1;
     let i = Math.round((higher-bottom)/2);
     
-    // console.log("target: ", target);
-    
-    while (target != nums[i] && higher-bottom>1) {
-        // console.log();
-        // console.log("bottom: ", bottom);
-        // console.log("higher: ", higher);
-        // console.log("nums[i]: ", nums[i]);
-        // console.log("i: ", i);
-        
-        
+    while (target != nums[i] && higher-bottom>1) {        
         if (target > nums[i]) {
             bottom = i;
         }
@@ -26,10 +17,6 @@ var searchInsert = function(nums, target) {
         }
         
         i = Math.round((higher-bottom)/2) + bottom;
-        
-        // console.log("i after round: ", i);
-        // console.log("bottom after round: ", bottom);
-        // console.log("higher after round: ", higher);
     }
     
     if (target <= nums[bottom]) {
