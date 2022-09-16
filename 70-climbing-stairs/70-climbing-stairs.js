@@ -15,18 +15,9 @@ var climbStairs = function(n) {
         return r;
     }
     
-    
     while (n1 >= 0) {
-        // console.log();
-        // console.log("n1: ", n1);
-        // console.log("n2: ", n2);
-        // console.log("permussions1: ", factorial(n1+n2));
-        // console.log("permussions2: ",factorial(n1)*factorial(n2));
-        
+        // permutation
         result += factorial(n1+n2) / (factorial(n1)*factorial(n2));
-        
-        
-
         n1 -= 2;
         n2 += 1;
     }
