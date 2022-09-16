@@ -11,6 +11,7 @@
 //     return --i;
 // };
 
+// Pell's Equation
 var mySqrt = function(x) {
     let i=1;
     let sqrt = 0;
