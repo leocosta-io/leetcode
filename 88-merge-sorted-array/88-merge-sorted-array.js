@@ -10,11 +10,11 @@ var merge = function(nums1, m, nums2, n) {
     let ind2 = 0;
     
     while (ind2 < n) {
-        console.log("nums1: ", nums1);
-        console.log("ind1: ", nums1[ind1]);
-        console.log("nums2: ", nums2);
-        console.log("ind2: ", nums2[ind2]);
-        console.log();
+        // console.log("nums1: ", nums1);
+        // console.log("ind1: ", nums1[ind1]);
+        // console.log("nums2: ", nums2);
+        // console.log("ind2: ", nums2[ind2]);
+        // console.log();
         
         if (nums2[ind2] <= nums1[ind1]) {
             nums1.splice(ind1, 0, nums2[ind2]);
