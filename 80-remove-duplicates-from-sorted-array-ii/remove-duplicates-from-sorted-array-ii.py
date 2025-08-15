@@ -25,8 +25,8 @@ class Solution:
                 nums[pos] = nums[i]
                 pos += 1
 
-        for i in range(pos, len(nums)):
-            nums[i] = None
+        # for i in range(pos, len(nums)):
+        #     nums[i] = None
 
         # print("nums2: ", nums)
         return k
